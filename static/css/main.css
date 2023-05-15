@@ -1,0 +1,22 @@
+body {
+
+}
+
+.header .header-navbar {
+    padding-bottom: 56px;
+}
+
+.content .container {
+    padding-top: 20px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    text-align: justify;
+}
