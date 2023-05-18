@@ -14,4 +14,4 @@ def about_page():
     return 'About Us Page'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
