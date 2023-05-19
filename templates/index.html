@@ -1,18 +1,38 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ title }}{% endblock %}
+{% block title %}{{ 'Головна сторінка' }}{% endblock %}
 
 {% block content %}
-<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet, aperiam architecto assumenda
-consectetur ducimus earum eligendi enim ex exercitationem facere laborum porro quae quasi quia quibusdam quos soluta,
-    tempore totam unde ut voluptatibus! Ab aliquid asperiores aspernatur atque, culpa illum iure officia possimus
-    quos rerum totam vitae, voluptate?
-</p>
-<br>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet, aperiam architecto assumenda
-consectetur ducimus earum eligendi enim ex exercitationem facere laborum porro quae quasi quia quibusdam quos soluta,
-    tempore totam unde ut voluptatibus! Ab aliquid asperiores aspernatur atque, culpa illum iure officia possimus
-    quos rerum totam vitae, voluptate?
-</p>
+
+<div class="banner">
+    <div class="container">
+        <div class="banner_img">
+            <img src="/static/img/bus_1.jpg" alt="">
+            <div class="in_banner">
+                <h1>Головна сторінка</h1>
+                <p>Текст на катрінці з інформацією</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dynamic">
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet, aperiam architecto assumenda
+            consectetur ducimus earum eligendi enim ex exercitationem facere laborum porro quae quasi quia quibusdam quos soluta,
+            tempore totam unde ut voluptatibus! Ab aliquid asperiores aspernatur atque, culpa illum iure officia possimus
+            quos rerum totam vitae, voluptate?
+        </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet, aperiam architecto assumenda
+            consectetur ducimus earum eligendi enim ex exercitationem facere laborum porro quae quasi quia quibusdam quos soluta,
+            tempore totam unde ut voluptatibus! Ab aliquid asperiores aspernatur atque, culpa illum iure officia possimus
+            quos rerum totam vitae, voluptate?
+        </p>
+    </div>
+</div>
+
+
+
 {% endblock %}

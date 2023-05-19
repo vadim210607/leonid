@@ -1,0 +1,35 @@
+body {
+
+}
+
+.header .header-navbar {
+    padding-bottom: 56px;
+}
+
+.header .header-navbar .navbar {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.content .container {
+    padding-top: 20px;
+    background-color: #f9f9f9;
+/*    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd; */
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.footer {
+    background-color: #f8f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.footer-con a img {
+    margin-right: 1em;
+}

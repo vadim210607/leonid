@@ -1,0 +1,73 @@
+$shadow_nav: 0 0 10px rgba(0,0,0,.5);
+
+@media (min-width: 576px) {
+    .navbar {
+        .in_drop{
+            display: none;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .banner {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.header {
+    .header-navbar {
+        padding-bottom: 56px;
+        .navbar {
+            box-shadow: $shadow_nav;
+        }
+    }
+}
+
+.banner {
+    .banner_img {
+        position: relative;
+        img {
+            max-width: 100%;
+        }
+    }
+    .in_banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,.7);
+        h1, p {
+            color: #fff;
+            text-align: center;
+            margin-top: 2em;
+        }
+    }
+}
+
+
+.dynamic {
+    .container {
+        padding-top: 2em;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+.footer {
+    .container {
+        padding-top: 2em;
+    }
+    box-shadow: $shadow_nav;
+    a img {
+        margin-right: 1em;
+        width: 2em;
+    }
+}
+
