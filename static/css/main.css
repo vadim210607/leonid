@@ -1,3 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
 @media (min-width: 576px) {
   .navbar .in_drop {
     display: none; } }
@@ -35,10 +38,41 @@
 
 .footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  .footer .container {
-    padding-top: 2em; }
-  .footer a img {
+  .footer .nav {
+    padding-left: 0.75rem; }
+    .footer .nav hr {
+      margin: 0.5em 0; }
+  .footer img {
     margin-right: 1em;
-    width: 2em; }
+    width: 2rem; }
+  .footer h5 {
+    text-align: center;
+    margin-top: 0.75em; }
+  .footer a {
+    color: #000;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: 0.75em; }
+  .footer p {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    text-align: center; }
+
+.in_drop {
+  padding-bottom: 1em; }
+  .in_drop p {
+    font-size: 2rem;
+    text-align: center; }
+  .in_drop .meseng {
+    display: flex;
+    justify-content: space-between; }
+  .in_drop img {
+    margin-right: 1rem;
+    width: 2rem; }
+  .in_drop a {
+    color: #000;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: 0.75em; }
 
 /*# sourceMappingURL=main.css.map */

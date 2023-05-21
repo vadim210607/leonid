@@ -1,5 +1,9 @@
 $shadow_nav: 0 0 10px rgba(0,0,0,.5);
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (min-width: 576px) {
     .navbar {
         .in_drop{
@@ -61,13 +65,59 @@ $shadow_nav: 0 0 10px rgba(0,0,0,.5);
 }
 
 .footer {
-    .container {
-        padding-top: 2em;
-    }
     box-shadow: $shadow_nav;
-    a img {
+    .nav {
+        padding-left: 0.75rem;
+        hr {
+            margin: 0.5em 0;
+        }
+    }
+    img {
         margin-right: 1em;
-        width: 2em;
+        width: 2rem;
+    }
+    h5 {
+        text-align: center;
+        margin-top: 0.75em;
+    }
+    a {
+        color: #000;
+        font-size: 1.25em;
+        text-decoration: none;
+        margin-top: 0.75em;
+    }
+    p {
+        margin-bottom: 0;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+}
+
+.in_drop {
+    padding-bottom: 1em;
+    p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .phone {
+//         display: flex;
+//         justify-content: center;
+    }
+    .meseng {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        margin-right: 1rem;
+        width: 2rem;
+    }
+
+    a {
+        color: #000;
+        font-size: 1.25em;
+        text-decoration: none;
+        margin-top: 0.75em;
     }
 }
 
