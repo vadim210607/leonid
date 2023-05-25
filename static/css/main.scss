@@ -1,23 +1,33 @@
 $shadow_nav: 0 0 10px rgba(0,0,0,.5);
 
+$white: #fff;
+$black: #000;
 
-// COLOR
-
-$font: #000;
 
 $minty: #78c2ad;
-$minty_65: #a6d7c9; // minty 0.65 opacity
+$teal: #20c997;
+$cyan: #6cc3d5;
+$green: #59ab6e;
 
-$teal: #20c997; // Зелений
-$cyan: #6cc3d5; // Небесний
+$d_dark_grey: #c4c4c4;
+$dark_grey: #cccccc;
+$midl_grey: #D7D8D2;
+$d_light_grey: #eeeeee;
+$light_grey: #f0f0f0;
+$white_grey: #f2f2f2;
 
-$midl_grey: #eee;
-$light_grey: #fff;
+$font: $black;
+$bg_color: $white;
 
-$primary: $minty;
-$primary_light: $minty_65;
+$accent: $minty;
+$border: $d_dark_grey;
 
-$dark_border: #000;
+$navbar: $accent;
+$navbar_collapse: $d_light_grey;
+$footer: $d_light_grey;
+
+
+
 
 
 body {
@@ -45,53 +55,53 @@ body {
     .header-navbar {
         padding-bottom: 56px;
         .navbar {
-            background-color: $primary;
+            background-color: $navbar;
             box-shadow: $shadow_nav;
             .navbar-brand{
                 padding: 0;
                 font-size: 1.5em;
-            }
+                color: $black;
+                }
             .navbar-collapse {
-                background-color: $midl_grey;
+                background-color: $navbar_collapse;
                 margin: 0.5rem -0.75rem -0.5rem;
                 .navbar-nav {
                     padding: 0 1.25rem;
                     .nav-item {
-                        border-bottom: 1px solid $dark_border;
+                        font-size: 1.25rem;
+                        border-bottom: 1px solid $border;
+                        }
                     }
-                }
                 .in_drop {
                     padding: 0.75rem 1.25rem;
 //                     padding-bottom: 1em;
                     p {
                         font-size: 1.5rem;
                         text-align: center;
-                    }
+                        }
                     .phone {
                 //         display: flex;
                 //         justify-content: center;
-                    }
+                        }
                     .meseng {
                         display: flex;
                         justify-content: space-between;
-                    }
-
+                        }
                     img {
                         margin-right: 1rem;
                         width: 2rem;
-                    }
-
+                        }
                     a {
                         color: #000;
                         font-size: 1.25em;
                         text-decoration: none;
                         margin-top: 0.75em;
+                        }
                     }
                 }
             }
         }
     }
-}
 
 .banner {
     .banner_img {
@@ -106,19 +116,17 @@ body {
         left: 0;
         bottom: 0;
         right: 0;
-        background: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.4);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         h1, h2, p {
-            color: #fff;
-            opacity: 0.5;
+            color: $light_grey;
+            opacity: 0.75;
             margin-top: 1rem;
             margin-left: 0.75rem;
             font-size: 1.25rem;
-//             color: #fff;
-//             text-align: center;
-//             margin-top: 2em;
+
         }
     }
 }
@@ -126,38 +134,58 @@ body {
 
 .dynamic {
     .container {
-        padding-top: 2em;}
+        padding-top: 2em;
+        }
     .item_card {
         margin-top: 1rem;
         .card{
-            background-color: $midl_grey;}
-        .but {
-            display: flex;
-            justify-content: space-between;
-            .btn_detail {
-                color: #000;
-                background-color: #78c2ad;
-                border-color: #78c2ad;}}}
-    h3 {
-        text-align: center;}
-    p {
-        text-align: justify;}
+            background-color: $light_grey;
+            border-radius: 0;
+            }
+            a img {
+                border-radius: 0;
+                }
+            .card-body {
+                .card-title {
+                    border-bottom: 1px solid $border;
+                    padding-bottom: 1rem;
+                    margin: 0;
+                    }
+                .but {
+                    padding-top: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    .btn {
+                        border-radius: 0;
+                        }
+                    .btn_detail {
+                        color: #000;
+                        background-color: $accent;
+                        border-color: $accent;
+                        }
+                    }
+                }
+            }
 }
+
 
 .item {
     h1 {
         font-size: 1.25rem;
         text-align: center;
-        margin: 0.5rem 0;}
+        margin: 0.5rem 0;
+        }
     .item_info {
         padding: 1rem;
         .item_content p {
-            text-align: justify;}}
+            text-align: justify;
+            }
+        }
 }
 
 .footer {
     box-shadow: $shadow_nav;
-    background-color: $primary_light;
+    background-color: $footer;
     .nav {
         padding-left: 0.75rem;
         hr {
@@ -173,7 +201,7 @@ body {
         margin-top: 0.75em;
     }
     a {
-        color: #000;
+        color: $black;
         font-size: 1.25em;
         text-decoration: none;
         margin-top: 0.75em;
@@ -219,8 +247,8 @@ body {
 
         }
         .thumb-nav.slick-slider {
-            border-top: 1px solid #cbc4c4;
-            border-bottom: 1px solid #cbc4c4;
+            border-top: 1px solid $border;
+            border-bottom: 1px solid $border;
             padding: 15px;
             margin: 0;
         }
