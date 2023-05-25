@@ -7,12 +7,12 @@
     <title>{% block title %}{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href='static/css/main.css'>
 </head>
@@ -20,7 +20,7 @@
 <!--  ===========    HEADER     ===============  -->
 <div class="header">
     <div class="header-navbar">
-        <nav class="navbar navbar-expand-sm fixed-top bg-body-tertiary">
+        <nav class="navbar navbar-expand-sm fixed-top"> <!-- bg-body-tertiary -->
             <div class="container">
                 <a class="navbar-brand" href="#">Leonid Pass</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,7 +29,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" onclick="myFunction(event)">
+                    <ul class="navbar-nav" onclick="myFunction(event)"> <!-- me-auto mb-2 mb-lg-0 -->
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Головна</a>
                         </li>
@@ -53,21 +53,21 @@
                     </ul>
 
                     <div class="in_drop">
-                        <hr>
+<!--                        <hr>-->
                         <p>Замовлення, інформація</p>
                         <div class="phone">
-                            <a href="tel:+380 67 123 45 67">
-                                <img alt="Tel" src="/static/img/phone-outline.svg">
-                                 +380 67 123 45 67
+                            <a href="tel:+380671234567">
+                                <img alt="Tel" src="/static/icon/phone-outline.svg">
+                                +380 67 123 45 67
                             </a>
                         </div>
                         <div class="meseng">
                             <a target="_blank" href="viber://chat?number=380671234567">
-                                <img alt="Viber" src="/static/img/viber.svg">
+                                <img alt="Viber" src="/static/icon/viber.svg">
                                  Viber
                             </a>
                             <a target="_blank" href="https://wa.me/+380671234567">
-                                <img alt="Whatsapp" src="/static/img//whatsapp.svg">
+                                <img alt="Whatsapp" src="/static/icon/whatsapp.svg">
                                  WhatsApp
                             </a>
                         </div>
@@ -89,26 +89,26 @@
                 <h5>Замовлення, інформація:</h5>
                 <hr>
                 <a href="tel:+380 67 123 45 67">
-                    <img alt="Tel" src="/static/img/phone-outline.svg">
+                    <img alt="Tel" src="/static/icon/phone-outline.svg">
                      +380 67 123 45 67
                 </a>
                 <a target="_blank" href="mailto:leonid-pass@mail.com.ua">
-                    <img alt="Email" src="/static/img/gmail.svg">
+                    <img alt="Email" src="/static/icon/gmail.svg">
                     leonid-pass@7mail.com.ua
                 </a>
 
             </div>
             <div class="nav flex-column col-12 col-md-6 col-lg-4">
                 <a target="_blank" href="viber://chat?number=380671234567">
-                    <img alt="Viber" src="/static/img/viber.svg">
+                    <img alt="Viber" src="/static/icon/viber.svg">
                      Viber
                 </a>
                 <a target="_blank" href="https://wa.me/+380671234567">
-                    <img alt="Whatsapp" src="/static/img//whatsapp.svg">
+                    <img alt="Whatsapp" src="/static/icon//whatsapp.svg">
                      WhatsApp
                 </a>
                 <a target="_blank" rel="nofollow" href="https://t.me/+380671234567">
-                    <img alt="Telegram" src="/static/img/telegram.svg">
+                    <img alt="Telegram" src="/static/icon/telegram.svg">
                      Telegram
                 </a>
             </div>
@@ -138,6 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="/static/css/general.js"></script>
 </body>
 </html>
 
