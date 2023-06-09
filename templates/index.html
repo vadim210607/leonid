@@ -7,11 +7,11 @@
 <div class="banner" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="banner_img">
-            <img src="/static/img/bus_1.jpg" alt="">
+            <img src="/static/img/scania-buses.jpg" alt="">
             <div class="in_banner">
                 <h1>Оренда автобуса для комфортних та зручних поїздок по Україні та Європі</h1>
                 <h2>Нерегулярні перевезення на замовлення.</h2>
-                <p>Замовлення автобуса</p>
+<!--                <p>Замовлення автобуса</p>-->
                 <p class="tel">093 123 45 67</p>
             </div>
         </div>
@@ -20,45 +20,115 @@
 
 <div class="dynamic">
     <div class="container">
-        <p> Ми офіційний перевізник з власним автобусним парком від 49 до 57 пасажирських місць.
-            Працюємо офіційно, маємо всі необхідні реєстраційні документи та дозволи а також міжнародну ліцензію на
-            здійснення пасажирських перевезень.
+        <p>
+            Ми офіційний перевізник, надаємо в оренду автобуси з водіями для  нерегулярних перевезень по Україні
+            та Європі. Маємо власний автобусний парк від 49 до 57 пасажирських місць, а також всі необхідні
+            реєстраційні документи та дозволи, міжнародну безстрокову ліцензію на здійснення пасажирських перевезень.
+        </p>
+        <p>
+            Територіально ми знаходимось у м. Києві, але наші послуги та подача автобусу доступні і в інші регіони
+            України за попередньою домовленістю. Вартість оренди оговорюється індивідуально, з урахуванням відстанні
+            поїздки, терміну перебування у місці призначення чи простою автобуса. Можлива готівкова чи
+            безготівкова форма оплати.
         </p>
         <div class="row">
+<!-- SCANIA_49 -->
             <div class="item_card col-12 col-md-6">
                 <div class="card">
-                    <a href="/scania">
-                    <img src="/static/img/bus_item_1.jpg" class="card-img-top" alt="..."></a>
+                    <a href="{{ url_for('scania_49') }}">
+                        <img src="/static/photo/scania_49/scania_49_1.jpg" class="card-img-top" alt="Оренда автобуса Scania Higer A80T">
+                    </a>
                     <div class="card-body">
-                        <h4 class="card-title">Scania Irizar 480</h4>
+                        <h4 class="card-title">Scania Higer A80T</h4>
                         <div class="but">
-                            <a href="/scania" class="btn btn-outline-dark">49 місць</a>
-                            <a href="/scania" class="btn btn_detail">Детальніше</a>
+                            <button class="btn btn-outline-dark">49 місць</button>
+                            <a href="{{ url_for('scania_49') }}" class="btn btn_detail">Детальніше</a>
                         </div>
-
                     </div>
                 </div>
             </div>
+<!-- MERSEDES 57 -->
             <div class="item_card col-12 col-md-6">
                 <div class="card">
-                    <a href="/mersedes">
-                    <img src="/static/img/bus_item_2.jpg" class="card-img-top" alt="..."></a>
+                    <a href="{{ url_for('mers_57') }}">
+                    <img src="/static/photo/mers_57/mers_57_1.jpg" class="card-img-top" alt="Оренда автобуса Mersedes-Benz Travego RHD-L"></a>
                     <div class="card-body">
-                        <h4 class="card-title">Mersedes Travego 412HD 480</h4>
+                        <h4 class="card-title">Mersedes-Benz Travego RHD-L</h4>
                         <div class="but">
-                            <a href="/mersedes" class="btn btn-outline-dark">53 місця</a>
-                            <a href="/mersedes" class="btn btn_detail">Детальніше</a>
+                            <button class="btn btn-outline-dark">57 місць</button>
+                            <a href="{{ url_for('mers_57') }}" class="btn btn_detail">Детальніше</a>
                         </div>
-
                     </div>
                 </div>
             </div>
+<!-- SETRA 53 -->
+            <div class="item_card col-12 col-md-6">
+                <div class="card">
+                    <a href="{{ url_for('setra_53') }}">
+                    <img src="/static/photo/setra_53/setra_53_1.jpg" class="card-img-top" alt="Оренда автобуса Setra S 416GT-HD"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Setra S 416GT-HD</h4>
+                        <div class="but">
+                            <button class="btn btn-outline-dark">53 місця</button>
+                            <a href="{{ url_for('setra_53') }}" class="btn btn_detail">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- MERSEDES 53 -->
+            <div class="item_card col-12 col-md-6">
+                <div class="card">
+                    <a href="{{ url_for('mers_53') }}">
+                    <img src="/static/photo/mers_53/mers_53_1.jpg" class="card-img-top" alt="Орендпа автобуса Mersedes-Benz 0560"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Mersedes-Benz Travego 0560</h4>
+                        <div class="but">
+                            <button class="btn btn-outline-dark">53 місця</button>
+                            <a href="{{ url_for('mers_53') }}" class="btn btn_detail">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- SETRA 53 -->
+            <div class="item_card col-12 col-md-6">
+                <div class="card">
+                    <a href="{{ url_for('setra_49') }}">
+                    <img src="/static/photo/setra_49/setra_49_1.jpg" class="card-img-top" alt="Оренда автобуса Setra S 415 HDH"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">Setra S 415 HDH</h4>
+                        <div class="but">
+                            <button class="btn btn-outline-dark">49 місць</button>
+                            <a href="{{ url_for('setra_49') }}" class="btn btn_detail">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
-        <p> Наша компанія спеціалізується на наданні послуг оренди автобуса з водіями для нерегулярних
-            перевезень по Україні та за її межами. Незалежно від того, чи ви плануєте туристичну подорож,
-            трансфер, подорож у справах, на спортивні заходи чи з будь-якою іншою метою, ми забезпечимо вам
-            високоякісний та зручний транспортний засіб та сервіс, який відповідатиме всім вашим потребам.
-        </p>
+<!--        <div class="aboutus" id="aboutus">-->
+<!--            <p>-->
+<!--                Наша компанія спеціалізується на наданні послуг оренди автобуса з водіями для нерегулярних перевезень-->
+<!--                по Україні та за її межами. Ми пропонуємо оренду автобуса як для короткострокових поїздок, так і для-->
+<!--                багатоденних маршрутів. За необхідності допомагаємо з організацією та плануванням поїздки та маршруту руху.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Всі автобуси мають необхідні реєстраційні та дозвільні документи, акти технічного огляду а також-->
+<!--                страховку на транспорт та пасажирів. Ми пильно стежимо за дотриманням усіх вимог та стандартів-->
+<!--                безпеки, щоб ви могли насолоджуватися поїздкою. Маємо власну ремонтну базу, наші кваліфіковані-->
+<!--                технічні спеціалісти відповідають за регулярний технічний огляд та обслуговування автобусів.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Маємо більше 20-ти років досвіду у сфері надання послуг з оренди автобусів для здійснення нерегулярних-->
+<!--                перевезень по Україні та Європі, та починали з одного автобуса в 1998 році.-->
+<!--            <br>-->
+<!--                Оренда автобуса з нами - це простий та зручний процес. Просто зв'яжіться з нашим менеджером, надайте-->
+<!--                нам деталі щодо вашої поїздки, включаючи дату, тривалість, кількість пасажирів та ваші особливі вимоги.-->
+<!--                Завдяки нашим досвідченим водіям і сучасному автопарку, ви можете бути впевнені, що ваша поїздка буде-->
+<!--                комфортною та безпечною.-->
+<!--            </p>-->
+<!--        </div>-->
     </div>
 </div>
 

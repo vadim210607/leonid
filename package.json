@@ -1,0 +1,24 @@
+{
+  "name": "leon",
+  "version": "1.0.0",
+  "description": "Flask simple site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass static/css -o static/css",
+    "scss-watch": "node-sass --watch static/css -o static/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadim210607/leonid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadim210607/leonid/issues"
+  },
+  "homepage": "https://github.com/vadim210607/leonid#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

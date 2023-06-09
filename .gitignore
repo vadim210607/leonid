@@ -1,3 +1,13 @@
+
+
+.node_modules/
+node_modules/
+myenv/
+.myenv
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,8 +137,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-myenv/
-.myenv
 
 # Spyder project settings
 .spyderproject

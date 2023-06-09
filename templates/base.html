@@ -14,7 +14,7 @@
 <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">-->
 <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href='static/css/main.css'>
+    <link rel="stylesheet" href='/static/css/main.css'>
 </head>
 <body>
 <!--  ===========    HEADER     ===============  -->
@@ -22,7 +22,7 @@
     <div class="header-navbar">
         <nav class="navbar navbar-expand-sm fixed-top"> <!-- bg-body-tertiary -->
             <div class="container">
-                <a class="navbar-brand" href="#">Leonid Pass</a>
+                <a class="navbar-brand" href="{{ url_for('index') }}">Leonid Pass</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -31,23 +31,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" onclick="myFunction(event)"> <!-- me-auto mb-2 mb-lg-0 -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Головна</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">Про нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/bus">Автобуси</a>
+                            <a class="nav-link" href="{{ url_for('about') }}">Про нас</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Автобуси
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/bus">Всі автобуси</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('scania_49') }}">Scania Higer A80T</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/bus/nom1">Автобу 1</a></li>
-                                <li><a class="dropdown-item" href="/bus/nom2">2 автобус</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('mers_57') }}">Mersedes-Benz Travego RHD-L</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{{ url_for('setra_53') }}">Setra S 416GT-HD</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{{ url_for('mers_53') }}">Mersedes-Benz Travego 0560</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{{ url_for('setra_49') }}">Setra S 415 HDH</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -86,8 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="nav flex-column col-12 col-md-6 col-lg-4">
-                <h5>Замовлення, інформація:</h5>
-                <hr>
+                <h5>Замовлення автобуса, інформація:</h5>
                 <a href="tel:+380 67 123 45 67">
                     <img alt="Tel" src="/static/icon/phone-outline.svg">
                      +380 67 123 45 67
@@ -107,10 +108,10 @@
                     <img alt="Whatsapp" src="/static/icon//whatsapp.svg">
                      WhatsApp
                 </a>
-                <a target="_blank" rel="nofollow" href="https://t.me/+380671234567">
-                    <img alt="Telegram" src="/static/icon/telegram.svg">
-                     Telegram
-                </a>
+<!--                <a target="_blank" rel="nofollow" href="https://t.me/+380671234567">-->
+<!--                    <img alt="Telegram" src="/static/icon/telegram.svg">-->
+<!--                     Telegram-->
+<!--                </a>-->
             </div>
 <!--            <div class="col-12 col-md-12 col-lg-4">-->
 <!--                <form>-->
