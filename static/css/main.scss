@@ -34,21 +34,72 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $font;
     font-size: 18px;
-}
+    }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        }
     .navbar {
         .in_drop{
             display: none;
+            }
+        }
+    .item {
+        padding-top: 1.5em;
+        .item_photo{
+            #detail {
+                border: 1px solid $border;
+                }
+            }
+        .item_info {
+            h1 {
+                text-align: justify;
+                padding: 0 0 1rem 0;
+                }
+            }
         }
     }
-}
+
+@media (max-width: 767px) {
+    .header .header-navbar .navbar .navbar-collapse {
+        margin: 0.5rem -0.75rem 1.5rem;
+        background-color: $navbar_collapse;
+        .navbar-nav {
+            padding: 0 1.25rem;
+            .nav-item {
+                font-size: 1.25em;
+                border-bottom: 1px solid #c4c4c4;
+                }
+            }
+        }
+    .item_photo {
+        border-bottom: 1px solid $border;
+        padding: 0;
+        }
+    }
+
 @media (max-width: 576px) {
-    .banner .container, .item .container {
+    .header .header-navbar .navbar .navbar-collapse {
+        margin: 0.5rem -0.75rem -0.5rem;
+        }
+    .banner .container {
         padding-left: 0;
         padding-right: 0;
+        }
+    .item .container {
+        padding-left: 0;
+        padding-right: 0;
+        .row {
+            margin: 0;
+            .item_photo {
+                padding: 0;
+                }
+            }
+        }
     }
-}
+
+
 
 .header {
     .header-navbar {
@@ -62,13 +113,13 @@ body {
                 color: $black;
                 }
             .navbar-collapse {
-                background-color: $navbar_collapse;
-                margin: 0.5rem -0.75rem -0.5rem;
+//                 background-color: $navbar_collapse;
+//                 margin: 0.5rem -0.75rem -0.5rem;
                 .navbar-nav {
                     padding: 0 1.25rem;
                     .nav-item {
                         font-size: 1.25em;
-                        border-bottom: 1px solid $border;
+//                         border-bottom: 1px solid $border;
                         .dropdown-menu.show {
                             margin-bottom: 1rem;
                             font-size: 1em;
@@ -184,9 +235,7 @@ body {
     .container{
 //         padding: 0;
         }
-    .item_photo {
-        border-bottom: 1px solid $border;
-        }
+
     h1 {
         font-size: 1.25em;
         text-align: center;
@@ -300,7 +349,7 @@ body {
         }
         .slick-slider {
             .slick-prev:hover, .slick-next:hover {
-                opacity: .65;
+                opacity: 1;
             }
             .slick-prev {
                 left: 0;
@@ -312,7 +361,7 @@ body {
                 z-index: 100;
                 position: absolute;
                 top: 40%;
-                opacity: .3;
+                opacity: .6;
                 transition: opacity .25s;
                 cursor: pointer;
 
@@ -324,8 +373,8 @@ body {
 //                 margin-top: -20px;
 //                 color: #B7B7B7;
 
-                img {
-                    width: 1rem;
+                svg {
+                    width: 1em;
                 }
             }
         //     max-width: 600px;
@@ -368,5 +417,6 @@ body {
 #detail .product-images .thumb-nav li.slick-current img {
   border-color: $accent;
 }
+
 
 
